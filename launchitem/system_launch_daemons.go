@@ -1,5 +1,5 @@
 package launchitem
 
 func listSystemLaunchDaemons() ([]LaunchItem, error) {
-	return []LaunchItem{}, nil
+	return listLaunchItems("/Library/LaunchDaemons", SystemLaunchDaemon)
 }
